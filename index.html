@@ -23,38 +23,29 @@ body{
   color:var(--text);
 }
 
-/* HEADER */
+/* 🔥 CLEAN HEADER (LOGO ONLY) */
 header{
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
-  padding:18px 30px;
-  background:rgba(20,20,40,0.8);
+  padding:20px 0;
+  background:rgba(15,23,42,0.8);
+  backdrop-filter:blur(12px);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:1px solid rgba(168,85,247,0.3);
 }
 
 .logo{
   font-size:22px;
   font-weight:bold;
+  letter-spacing:1px;
 }
 
 .logo span{
   color:var(--purple);
-}
-
-nav{
-  display:flex;
-  gap:20px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  transition:0.3s;
-  font-size:14px;
-}
-
-nav a:hover{
-  color:var(--purple);
+  text-shadow:0 0 12px rgba(168,85,247,0.7);
 }
 
 /* SECTION */
@@ -71,14 +62,13 @@ nav a:hover{
   padding-bottom:6px;
 }
 
-/* FORCE 2 CARDS IN ONE LINE ALWAYS */
+/* 2 CARDS ALWAYS */
 .game-grid{
   display:grid;
-  grid-template-columns:1fr 1fr; /* ALWAYS 2 columns */
+  grid-template-columns:1fr 1fr;
   gap:20px;
 }
 
-/* CARD */
 .game-card{
   background:var(--card);
   border-radius:14px;
@@ -111,7 +101,6 @@ nav a:hover{
   box-shadow:0 0 20px rgba(168,85,247,0.4);
 }
 
-/* FOOTER */
 footer{
   background:#0b0f1a;
   text-align:center;
@@ -126,11 +115,6 @@ footer{
 
 <header>
   <div class="logo">FASTMARKET<span>.SHOP</span></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="standoff.html">StandOff 2</a>
-    <a href="carplay.html">CarParking</a>
-  </nav>
 </header>
 
 <section class="games">
